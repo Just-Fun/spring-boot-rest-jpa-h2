@@ -41,6 +41,7 @@ public class WebMockTest {
         employees.add(employee);
 
         when(service.retrieveEmployees()).thenReturn(employees);
+
         this.mockMvc.perform(get("/api/employees")).andDo(print()).andExpect(status().isOk())
             .andExpect(content().string(containsString("Vasilii")));
     }
