@@ -15,6 +15,7 @@ import lombok.Data;
 /*@EntityListeners(AuditingEntityListener.class)
 @JsonIgnoreProperties(value = {"createdAt", "updatedAt"},
         allowGetters = true)*/
+//@Builder
 public class Employee {
 
     @Id
